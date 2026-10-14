@@ -10,6 +10,14 @@ An open-source spatial falling-block game with three active targets:
 
 The project began as a browser-based spatial game. The current web launcher requires WebXR `immersive-ar`; it supports handheld AR-capable browsers and includes headset-aware XR paths for Meta Quest-class browsers, while a native Android edition is also in development.
 
+## Supported immersive experiences
+
+**Mobile augmented reality (AR).** On supported phones and browsers, the WebXR edition places the falling-block board in the player's physical surroundings. Launch requires an `immersive-ar` session and supported spatial tracking and hit-testing.
+
+**Meta Quest mixed reality (MR).** On compatible Meta Quest VR headsets, the same spatial experience is intended for mixed-reality play with passthrough, tracked controllers, and in-world interfaces. Headset/browser compatibility depends on WebXR `immersive-ar` support and requires device-specific validation.
+
+**Session-mode distinction.** Both routes use WebXR `immersive-ar`. The current web build does not start a separate `immersive-vr` session or claim a fully virtual VR mode. The native Android edition is a separate implementation.
+
 ## What exists today
 
 ### WebXR / mobile AR
