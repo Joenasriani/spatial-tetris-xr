@@ -9,6 +9,14 @@ An open-source spatial falling-block game with two active implementations:
 
 The WebXR implementation requires browser/device support for WebXR `immersive-ar`. The Android edition is built with Kotlin and Jetpack Compose.
 
+## Supported immersive experiences
+
+**Mobile augmented reality (AR).** On compatible phones and mobile browsers, the WebXR edition positions the falling-block board in the player's physical surroundings. It requires an `immersive-ar` session and the spatial tracking and hit-testing capabilities described below.
+
+**Meta Quest mixed reality (MR).** On Meta Quest VR headsets with compatible browser support, the spatial WebXR experience is intended to place the board in the physical environment through passthrough. The code contains headset detection, tracked-controller input, and in-world interface paths. Compatibility and end-to-end behavior still need hardware verification; headset support must not be represented as universally tested.
+
+**Technical distinction.** Both device routes use WebXR `immersive-ar`. The current source does not request a separate `immersive-vr` session or implement an independently verified fully virtual VR mode. XR is the umbrella term for the mobile AR and headset MR experiences. The native Android implementation is maintained separately on the `android` branch.
+
 ## WebXR / spatial edition
 
 The `main` branch contains the browser-based spatial edition.
