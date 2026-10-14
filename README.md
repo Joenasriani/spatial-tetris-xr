@@ -1,11 +1,11 @@
 [English](README.md) · [Français](README.fr.md) · [العربية](README.ar.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [हिन्दी](README.hi.md) · [Bahasa Indonesia](README.id.md) · [Tiếng Việt](README.vi.md)
 
-# AR Tetris XR
+# Spatial Tetris XR
 
 An open-source spatial falling-block game with three active targets:
 
 - **Mobile WebXR AR** — runs in supported mobile browsers/devices that expose WebXR `immersive-ar`
-- **Meta Quest / XR headsets** — immersive WebXR with tracked-controller input and in-world UI
+- **Meta Quest VR headsets (mixed reality)** — immersive WebXR with passthrough, tracked-controller input and in-world UI; the current source uses `immersive-ar` rather than a separate `immersive-vr` session
 - **Native Android** — Kotlin + Jetpack Compose edition under active development
 
 The project began as a browser-based spatial game. The current web launcher requires WebXR `immersive-ar`; it supports handheld AR-capable browsers and includes headset-aware XR paths for Meta Quest-class browsers, while a native Android edition is also in development.
